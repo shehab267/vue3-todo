@@ -1,10 +1,15 @@
 <template>
+  <TheHeader />
   <router-view v-slot="slotProps">
     <transition name="route" mode="out-in">
       <component :is="slotProps.Component"></component>
     </transition>
   </router-view>
 </template>
+
+<script setup>
+import TheHeader from "./components/layout/TheHeader.vue";
+</script>
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
@@ -18,7 +23,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 20px 50px;
 }
 .route-enter-from {
   opacity: 0;
