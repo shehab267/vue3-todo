@@ -1,17 +1,26 @@
-# Todo app
+# Todo List Project
 
-## Vue.js Todo App
+A simple Todo List built with Vue.js
 
-- [x] Setup
-- [x] Create New Todo Form
-- [x] Call a function when the form is submitted
-- [ ] Create a string property to store the user input
-- [ ] Watch the property change as we type in the input
-- [ ] Log the user input when the form is submitted
-- [ ] Create an array property for todos
-- [ ] Push the new todo into the todos array, with done: false
-- [ ] Show the todos in a list
-- [ ] Check done on a todo to mark it as done
-- [ ] Show a line through the todo text
-- [ ] Add a button to delete a todo
-- [ ] Add a button to mark all todos as done
+##### [Live Demo](https://simple-todo-list-832b1.web.app/)
+
+## Prerequisites
+
+- Node.js
+- npm
+
+## Getting Started
+
+1. Clone the repository. `git clone https://github.com/shehab267/simple-todo-list-page`
+2. Navigate to the project directory `cd simple-todo-list-page`
+3. Install the required packages `npm install`
+4. Start the development server `npm run dev`
+5. Open your browser and go to http://localhost:8080 to see the project.
+
+## Built With
+
+- [Vue.js](https://vuejs.org/)
+
+## Author
+
+- **Shehab Hawary** - [shehab267](https://github.com/shehab267)
