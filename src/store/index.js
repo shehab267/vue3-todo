@@ -1,5 +1,11 @@
 import { createStore } from "vuex";
 
-const store = createStore({});
+import auth from "./modules/auth/index";
+
+const store = createStore({
+  modules: {
+    auth,
+  },
+});
 
 export default store;
