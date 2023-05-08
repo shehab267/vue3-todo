@@ -8,7 +8,15 @@
 </template>
 
 <script setup>
+import { onMounted } from "vue";
+import { useStore } from "vuex";
 import TheHeader from "./components/layout/TheHeader.vue";
+
+const store = useStore();
+
+onMounted(() => {
+  store.dispatch("tryLogin");
+});
 </script>
 
 <style>
