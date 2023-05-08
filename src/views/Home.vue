@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-4">
+  <div>
     <h1>Vue 3 Todo App</h1>
     <el-form
       ref="todoFormRef"
