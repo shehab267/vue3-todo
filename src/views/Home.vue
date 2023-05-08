@@ -32,7 +32,7 @@
 </template>
 
 <script setup>
-import { ref, reactive } from "vue";
+import { ref } from "vue";
 
 const todoForm = ref("");
 const todos = ref([]);

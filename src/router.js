@@ -10,10 +10,23 @@ const router = createRouter({
       component: import("./views/Home.vue"),
     },
     {
+      path: "/auth",
+      name: "Auth",
+      meta: { requiresUnAuth: true },
+      component: () => import("./views/auth/UserAuth.vue"),
+    },
+    {
       path: "/:notFound(.*)",
-      component: import("./views/NotFound.vue"),
+      component: () => import("./views/NotFound.vue"),
     },
   ],
 });
+
+// router.beforeEach((to, _, next) => {
+//   if (to.meta.requiresUnAuth && store.getters.isAuthenticated) {
+//     console.log("requiresUnAuth");
+//     next("/");
+//   }
+// });
 
 export default router;
